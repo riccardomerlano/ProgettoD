@@ -11,4 +11,17 @@ package systempackage;
  */
 public class Prenotazione {
     
+    Tipo tipologia;
+    int numero;
+    
+    public Prenotazione(Tipo tipologia, int numero)
+    {
+        this.tipologia = tipologia;
+        this.numero = numero;
+    }
+    
+    public String getCodice(){
+        return tipologia.toString() + numero;
+    }
+    
 }
