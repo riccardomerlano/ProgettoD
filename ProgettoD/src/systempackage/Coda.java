@@ -5,10 +5,25 @@
  */
 package systempackage;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author riccardo
  */
 public class Coda {
+    
+    static ArrayList listaprenotazioni;
+    static int numeroprenotazioni;
+    
+    public Coda(){
+        Coda.listaprenotazioni = new ArrayList();
+        Coda.numeroprenotazioni = 0;
+    }
+
+    static void aggiungiPrenotazione(Prenotazione ticket) {
+        numeroprenotazioni++;
+        listaprenotazioni.add(ticket);
+    }
     
 }
