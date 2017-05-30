@@ -23,5 +23,12 @@ public class Prenotazione {
     public String getCodice(){
         return tipologia.toString() + numero;
     }
+
+    @Override
+    public String toString() {
+        return "Prenotazione{" + "tipologia=" + tipologia + ", numero=" + numero + '}';
+    }
+    
+    
     
 }

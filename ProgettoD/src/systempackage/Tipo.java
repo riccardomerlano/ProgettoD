@@ -9,6 +9,6 @@ package systempackage;
  *
  * @author riccardo
  */
-public class Tipo {
-    
+public enum Tipo {
+    A, B, C, D;
 }

@@ -11,4 +11,36 @@ package systempackage;
  */
 public class Sportello {
     
+    int ID;
+//    Tipo tipologia;
+    boolean attivo;
+    boolean libero;
+
+    public Sportello(int ID) {
+        this.ID = ID;
+//        this.tipologia = tipologia;
+        this.attivo = true;
+        this.libero = true;
+    }
+    
+    public void sonoOccupato(){
+        this.libero = false;
+    }
+    
+    public void sonoDisponibile(){
+        this.libero = true;
+    }
+
+    @Override
+    public String toString() {
+        return "Sportello{" + "ID=" + ID + '}';
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }
