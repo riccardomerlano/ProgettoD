@@ -10,5 +10,5 @@ package systempackage;
  * @author riccardo
  */
 public class Coda {
-    
+    int i=0;
 }
